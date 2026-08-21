@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card - faraz heker</title>
+    <style>
+        /* Setup background meniru gambar dengan gradasi */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #b4d98a, #8dbaba, #d4989e);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Styling Kartu Profil dengan efek soft/glass */
+        .card {
+            background: rgba(235, 240, 235, 0.85);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            width: 320px;
+        }
+
+        /* Styling Foto Profil menjadi bulat sempurna */
+        .profile-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+
+        /* Styling Tipografi Teks */
+        .name {
+            margin: 0;
+            font-size: 26px;
+            color: #333333;
+            font-weight: 500;
+        }
+
+        .role {
+            margin: 5px 0 25px;
+            font-size: 15px;
+            color: #666666;
+        }
+
+        .bio {
+            font-size: 15px;
+            color: #222222;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        /* Styling Container Tombol secara horizontal */
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        /* Styling Dasar Tombol (ukuran & bentuk) */
+        .btn {
+            padding: 12px 0;
+            border-radius: 8px;
+            border: none;
+            font-size: 15px;
+            cursor: pointer;
+            flex: 1;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        /* Tombol 'Ikuti' - Warna Solid */
+        .btn-primary {
+            background-color: #1976d2; 
+            color: white;
+            box-shadow: 0 4px 6px rgba(25, 118, 210, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: #1565c0;
+        }
+
+        /* Tombol 'Pesan' - Tampilan Outlined (Garis Luar) */
+        .btn-secondary {
+            background-color: transparent;
+            color: #1976d2;
+            border: 1px solid #1976d2;
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(25, 118, 210, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Silakan ganti src dengan URL atau path gambar (1000484702.jpg) milikmu -->
+        <img src="cat razz.jfif"" alt="Foto Profil" class="profile-img">
+        
+        <h1 class="name">faraz heker</h1>
+        <p class="role">software engineer</p>
+        
+        <p class="bio">suka maen game ga suka belajar</p>
+        
+        <div class="buttons">
+            <button class="btn btn-primary">Ikuti</button>
+            <button class="btn btn-secondary">Pesan</button>
+        </div>
+    </div>
+
+</body>
+</html>
